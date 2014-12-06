@@ -1,0 +1,210 @@
+* {
+  outline: none;
+}
+
+#info_Panel
+{
+  position: fixed;
+  width: 600px;
+  height: 500px;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: 100px;
+  background-color: rgba(0, 116, 214, 1);
+  z-index: 2;
+  padding-left: 50px;
+  box-sizing: border-box;
+  display: none;
+  font-family: sans-serif;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  color: white;
+}
+
+  #info_Panel h1
+  {
+    text-align: center;
+  }
+
+  #info_Panel h2
+  {
+    margin-top: 60px;
+  }
+
+  #info_Panel p
+  {
+    font-size: 25px;
+  }
+
+  .info_Text
+  {
+    display: none;
+  }
+
+#main
+{
+  padding: 5px;
+  width: 900px;
+  height: 1500px;
+  min-height: 900px;
+  position: absolute;
+  left: 50%;
+  margin-left: -450px;
+  margin-top: 250px;
+}
+
+  #info_Btn
+  {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 95%;
+    background-image: url(img/info.svg);
+    background-size: cover;
+    border-radius: 30px;
+  }
+  
+  #val_Box
+  {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+  }
+
+    #txt_Box
+    {
+      margin-right: 30px;
+      margin-left: 50px;
+    }
+
+    #txt_Box p
+    {
+      font-size: 25px;
+      font-family: helvetica, ubuntu;
+    }
+
+    .val_Box_Class
+    {
+      float: left;
+    }
+
+    #inp_Box
+    {
+      padding-top: 25px;
+    }
+
+    #inp_Box input
+    {
+      height: 25px;
+      padding-left: 7px;
+      padding-right: 7px;
+      font-size: 17px;
+      border: none;
+      border-bottom: 1px solid #eee;
+      outline: none;
+    } 
+
+      .inp_Val
+      {
+        margin-bottom: 26px;
+        -webkit-transition-property: box-shadow;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: ease;
+      }
+
+        .inp_Val:hover
+        {
+          box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+        }
+
+  .btn
+  {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    background-size: cover;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+  }
+
+    .btn:hover
+    {
+      box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+      cursor: pointer;
+    }
+
+    #start_Btn
+    {
+      margin-top: 470px;
+      background-image: url(img/start.jpg); 
+    }
+
+    #table_Btn
+    {
+      margin-top: 1270px;
+      background-image: url(img/table.jpg); 
+      display: none;
+    }
+
+    #return_Btn
+    {
+      margin-top: 2360px;
+      margin-bottom: 30px;
+      margin-left: 0;
+      left: 95%;
+      background-image: url(img/return.jpg); 
+      display: none;
+    }
+
+  #chart
+  {
+    position: absolute;
+    left: 50%;
+    min-width: 310px;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    margin-left: -350px;
+    float: left;
+    margin-top: 800px;
+  }
+
+  #table_Box
+  {
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    margin-top: 1700px;
+    display: none;
+  }
+
+  .c_Table
+  {
+    width: 220px;
+    float: left;
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-bottom: 400px;
+    border-spacing: 0;
+  }
+
+    .c_Table td
+    {
+      height: 35px;
+      width: 30px;
+      text-align: center;
+      border-right: 1px solid #d4dde5;
+      -webkit-transition-property: background-color;
+      -webkit-transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+    }
+
+      .c_Table td:hover
+    {
+      background-color: #6da2cf;
+    }

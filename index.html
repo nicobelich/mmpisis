@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MMPIS</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/exporting.js"></script>
+</head>
+
+<body onload="page_LD()">
+
+    <div id="info_Panel" onclick="info_Click()">
+        <h1 class="info_Text">M/M/V/K/N</h1>
+        <p class="info_Text">Программа для вычисления вероятности</p>
+        <h2 class="info_Text">Используемые параметры:</h2>
+        <p class="info_Text">A - нагрузка одного источника<br/>N - число источников нагрузки<br/>V - число обслуживающих устройств</p>
+        <h2 class="info_Text">Разработал:</h2>
+        <p class="info_Text">Михаил Шарин группа ИКПИ-31</p>
+    </div>
+
+    <div id="main" onscroll="start_Click()">
+        <div id="info_Btn" class="btn" onclick="info_Click()"></div>
+
+        <div id="val_Box">
+            <div id="txt_Box" class="val_Box_Class">
+                <div class="txt_Val"><p>Input A</p></div>
+                <div class="txt_Val"><p>Input N</p></div>
+                <div class="txt_Val"><p>Input V</p></div>
+                 
+            </div>
+            <div id="inp_Box" class="val_Box_Class">
+                <div class="inp_Val"><input placeholder="Значение от 0 до 1" autofocus id="val_A"></input></div>
+                <div class="inp_Val"><input placeholder="Значение больше V" id="val_N"></input></div>
+                <div class="inp_Val"><input placeholder="Значение меньше N" id="val_V"></input></div>
+            </div>
+        </div>
+
+        <div id="start_Btn" class="btn" onclick="start_Click()"></div>
+
+        <div id="chart"></div>
+
+        <div id="table_Btn" class="btn" onclick="table_Click()"></div>
+
+        <div id="table_Box">
+            <table class="c_Table", id="table"></table>
+            <table class="c_Table", id="table1"></table> 
+            <table class="c_Table", id="table2"></table> 
+        </div>   
+
+        <div id="return_Btn" class="btn" onclick="return_Click()"></div>
+
+    </div>
+
+</body>
+</html>
